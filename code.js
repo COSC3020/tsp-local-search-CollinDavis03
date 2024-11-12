@@ -28,7 +28,7 @@ function tsp_ls(distance_matrix) {
         //Step 2: Calculate the total distance of the initial random route
         let currentDistance = CRD(currentRoute); 
         let improved = true; //Check if any improved 
-        let iteration = 0;  //Counter to track number of iterations
+        let iterationCount = 0;  //Counter to track number of iterations
         const maxIterations = 1000; // Set a limit of iterations prevent infinite loops
         const noImprovementLimit = 100; // Set a limit for no improve 
         let noImprovementCounter = 0; //counter consecutive iterations with no improve
