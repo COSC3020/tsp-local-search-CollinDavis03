@@ -55,10 +55,10 @@ function tsp_ls(distance_matrix) {
             }
 
             //Step 4: Track iteration count and manage stopping conditions
-            iterationcount++; 
+            iterationCount++; 
             if (!improved) {
                 noImprovementCounter++; //Incase no imporvements were made 
-                if (noImprovementCOunter >= noImprovementLimit) {
+                if (noImprovementCounter >= noImprovementLimit) {
                     //Stop if we reach threshold
                     break;
                 }
