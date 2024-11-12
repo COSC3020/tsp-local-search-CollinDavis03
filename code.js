@@ -6,7 +6,7 @@ function tsp_ls(distance_matrix) {
     function CRD(route) {
         let distance = 0; 
         for (let i = 0; i < route.length - 1; i++) {
-            distance += distance_matrix[route[i][route[i + 1]]; 
+            distance += distance_matrix[route[i]][route[i + 1]]; 
         }
         return distance; 
 
