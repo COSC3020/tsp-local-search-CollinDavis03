@@ -8,7 +8,8 @@ function tsp_ls(distance_matrix) {
         for (let i = 0; i < route.length - 1; i++) {
             distance += distance_matrix[route[i]][route[i + 1]]; 
         }
-        return distance; 
+        return distance;
+    }
 
         //Function to perform 2-opt swap between indices i and k in route
         //TOS = Two Opt Swap
