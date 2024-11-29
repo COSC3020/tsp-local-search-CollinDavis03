@@ -28,10 +28,12 @@ function tsp_ls(distance_matrix) {
         //Step 2: Calculate the total distance of the initial random route
         let currentDistance = CRD(currentRoute); 
         let improved = true; //Check if any improved 
-        let iterationCount = 0;  //Counter to track number of iterations
-        const maxIterations = 1000; // Set a limit of iterations prevent infinite loops
-        const noImprovementLimit = 100; // Set a limit for no improve 
-        let noImprovementCounter = 0; //counter consecutive iterations with no improve
+        let iterationCount = 0;  //Counter to track the number of iterations. 0 is also the starting value. 
+        const maxIterations = 1000; // Set a limit of iterations to prevent infinite loops. I tried doing 100 and it did not pass]
+        // the test so I did 1000 so that it could explore a larger range of values. 
+        const noImprovementLimit = 100; // Set a limit for no improvement. I gave it a larger number in case it finds a improvement at number 99 
+        // once it hits 100 it will stop. 
+        let noImprovementCounter = 0; //counter consecutive iterations with no improvement. 0 is the starting value. 
 
         //Step 3: Begin 2-opt algorithm loop
         while (improved && iterationCount < maxIterations) {
