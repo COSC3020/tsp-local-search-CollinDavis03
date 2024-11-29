@@ -64,7 +64,7 @@ We also have the TOS function which swaps operations by slicing and concatenatin
 
 We have the outer while loop at the start of the 2-opt algorithm loop. This performs $)(n^{2})$ operations. The reason is that each 2-opt swap ($O(n)$) and the CRD ($O(n)$) is being performed to make (O(n) + O(n)) per iteration. 
 
-When we combine all the while loops with the for loops we will get $O(n^{3})4 as the worst-case runtime. 
+When we combine all the while loops with the for loops we will get $O(n^{3})$ as the worst-case runtime. 
 
 The worst-case runtime for this code is $\Theta(n^{3})$ 
 
