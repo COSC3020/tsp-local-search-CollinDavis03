@@ -62,12 +62,15 @@ We also have CRD which calculates the total distance of a route given to it. Thi
 
 We also have the TOS function which swaps operations by slicing and concatenating arrays. This takes $O(n)$ time to do. 
 
-We have the outer while loop at the start of the 2-opt algorithm loop. This performs $)(n^{2})$ operations. The reason is that each 2-opt swap ($O(n)$) and the CRD ($O(n)$) is being performed to make (O(n) + O(n)) per iteration. 
+We have the outer while loop at the start of the 2-opt algorithm loop. This performs $)(n^{2})$ operations. The reason is that each 2-opt swap ($O(n)$) and the CRD ($O(n)$) are being performed to make (O(n) + O(n)) per iteration. 
 
 When we combine all the while loops with the for loops we will get $O(n^{3})$ as the worst-case runtime. 
 
 The worst-case runtime for this code is $\Theta(n^{3})$ 
 
+## I and K termination criterion 
+
+I went with larger values in the max iterations and improvement counter so that it would have a limit and give it time to go through every possible amount and not run indefinitely. 
 
 ## Sources 
 I do not have any sources for this code except for collaborating with Lily and Nolan on this to get an idea of where we all would start and execute the code. 
