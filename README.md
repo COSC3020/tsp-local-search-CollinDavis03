@@ -70,7 +70,7 @@ The worst-case runtime for this code is $\Theta(n^{3})$
 
 ## I and K termination criterion 
 
-I went with larger values in the max iterations and improvement counter so that it would have a limit and give it time to go through every possible amount and not run indefinitely. 
+The maxIterations variable is set to a thousand because I wanted to allow the algorithm to explore many swaps without excessive computational cost. The noImporvementLimit is set to 100 because I thought it would be a good number to allow time in case by some rare chance a swap happens and it does not do any wasted cycles. Then i start at one to avoid modifying the start point. Then k begins after i and goes up to n - 1 ensuring that the swaps are meaningful. 
 
 ## Sources 
 I do not have any sources for this code except for collaborating with Lily and Nolan on this to get an idea of where we all would start and execute the code. 
